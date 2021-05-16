@@ -16,10 +16,10 @@
 </html>
 
 <script>
-    //var isMobile = false;
-
-    if (!(/Mobi|Android/i.test(navigator.userAgent))) {
-        //isMobile = true;
+    if ((/Mobi|Android/i.test(navigator.userAgent))) {
+        console.log("is mobile");
+    } else {
+        console.log("is not mobile");
         window.location.replace("index.html");
     }
 </script>
